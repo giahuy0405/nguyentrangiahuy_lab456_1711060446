@@ -14,6 +14,7 @@ namespace gihuy_lab456.Migrations
         
         public override void Down()
         {
+
         }
     }
 }
