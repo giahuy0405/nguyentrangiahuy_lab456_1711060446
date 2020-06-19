@@ -7,6 +7,7 @@ namespace gihuy_lab456.DTOs
 {
     public class FollowingDto
     {
+        public static string FollweeId { get; internal set; }
         public string FolloweeId { get; set; }
     }
 }

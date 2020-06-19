@@ -20,17 +20,18 @@ namespace gihuy_lab456.Controllers
         }
 
         public object AttendeeId { get; private set; }
+        public string UserId { get; private set; }
 
         [HttpPost]
-        public IHttpActionResult Attend(AttendanceDto attendanceDto)
+        public IHttpActionResult Follow(AttendanceDto attendanceDto)
         {
             var userId = User.Identity.GetUserId();
-            if (_dbContext.Attendances.Any(a => a.AttendeeId == userId && a.CourseId == attendanceDto.CourseId))
+            if (_dbContext.Followings.Any(f => f.FollowerId == userId && f.FolloweeId == FollowingDto.FollweeId))
                 return BadRequest("The Attendance already exists!");
             var attendance = new Attendance
             {
-                CourseId = attendanceDto.CourseId,
-                AttendeeId = User.Identity.GetUserId()
+                FollowerId = userId,
+                FolloweeId = FollowingDto.FollweeId
             };
             _dbContext.Attendances.Add(attendance);
             _dbContext.SaveChanges();

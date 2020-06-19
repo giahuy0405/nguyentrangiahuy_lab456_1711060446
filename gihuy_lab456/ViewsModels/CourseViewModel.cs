@@ -16,12 +16,11 @@ namespace gihuy_lab456.ViewModel
         [FutureDate]
         public string Date { get; set; }
         [Required]
-        [FutureDate]
+        [ValidTime]
         public string Time { get; set; }
         [Required]
         public byte Category { get; set; }
-        [Required]
-        public object DataTimeStyles { get; private set; }
+        //public object DataTimeStyles { get; private set; }
         public IEnumerable<Category> Categories { get; set; }
 
         public DateTime GetDateTime()

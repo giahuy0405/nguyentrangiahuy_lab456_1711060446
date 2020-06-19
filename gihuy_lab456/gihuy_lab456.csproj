@@ -180,6 +180,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AttendancesController.cs" />
     <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Controllers\FollowingsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DTOs\AttendanceDto.cs" />
@@ -211,6 +212,10 @@
     <Compile Include="Migrations\202006190747184_AddFollowingsTable.Designer.cs">
       <DependentUpon>202006190747184_AddFollowingsTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006190820147_fixdatbase.cs" />
+    <Compile Include="Migrations\202006190820147_fixdatbase.Designer.cs">
+      <DependentUpon>202006190820147_fixdatbase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -226,6 +231,7 @@
     <Compile Include="ViewsModels\CustomViewModel.cs" />
     <Compile Include="ViewsModels\FutureDate.cs" />
     <Compile Include="ViewsModels\RegisterViewModel.cs" />
+    <Compile Include="ViewsModels\ValidTime.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -320,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006190747184_AddFollowingsTable.resx">
       <DependentUpon>202006190747184_AddFollowingsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006190820147_fixdatbase.resx">
+      <DependentUpon>202006190820147_fixdatbase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

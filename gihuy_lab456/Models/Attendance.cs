@@ -20,5 +20,7 @@ namespace gihuy_lab456.Models
         [Key]
         [Column(Order = 2)]
         public string AttendeeId { get; set; }
+        public string FolloweeId { get; internal set; }
+        public string FollowerId { get; internal set; }
     }
 }
