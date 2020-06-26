@@ -22,6 +22,8 @@ namespace gihuy_lab456.ViewModel
         public byte Category { get; set; }
         //public object DataTimeStyles { get; private set; }
         public IEnumerable<Category> Categories { get; set; }
+        public IQueryable<Course> UpcommingCourses { get; internal set; }
+        public bool ShowAction { get; internal set; }
 
         public DateTime GetDateTime()
         {

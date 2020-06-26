@@ -183,6 +183,7 @@
     <Compile Include="Controllers\FollowingsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\viewModel.cs" />
     <Compile Include="DTOs\AttendanceDto.cs" />
     <Compile Include="DTOs\FollowingDto.cs" />
     <Compile Include="Global.asax.cs">
@@ -227,10 +228,13 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewsModels\CoursesViewModel.cs" />
     <Compile Include="ViewsModels\CourseViewModel.cs" />
     <Compile Include="ViewsModels\CustomViewModel.cs" />
     <Compile Include="ViewsModels\FutureDate.cs" />
+    <Compile Include="ViewsModels\get.cs" />
     <Compile Include="ViewsModels\RegisterViewModel.cs" />
+    <Compile Include="ViewsModels\set.cs" />
     <Compile Include="ViewsModels\ValidTime.cs" />
   </ItemGroup>
   <ItemGroup>

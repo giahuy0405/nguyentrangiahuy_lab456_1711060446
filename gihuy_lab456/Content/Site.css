@@ -31,7 +31,7 @@ textarea {
 }
 .course > li .date {
     text-align: center;
-    background-color:darkred;
+    background-color:#d41d50;
     color:white;
     width: 60px;
     border-radius: 8px;
